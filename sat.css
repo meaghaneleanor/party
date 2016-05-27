@@ -1,0 +1,297 @@
+
+section.sat-hero {
+  background-image: url("../assets/sat-hero.jpg");
+  background-size: cover;
+  background-position: center center; }
+  section.sat-hero h1 {
+    font-weight: 600;
+    margin: 0;
+    max-width: 522px; }
+
+section.letter {
+  padding: 50px 0; }
+  section.letter h1 {
+    color: #00718C;
+    padding-bottom: 25px; }
+  section.letter p {
+    font-size: 14px;
+    width: 88%;
+    margin-bottom: 25px; }
+  section.letter p.italic {
+    font-style: italic;
+    margin-bottom: 0; }
+  section.letter p.letter-last-p {
+    margin-bottom: 50px; }
+  section.letter p.letter-sincerely {
+    margin-bottom: 20px; }
+  section.letter div.letter-stats {
+    margin-left: 40px; }
+  section.letter div.letter-parent {
+    margin-right: -45px; }
+  section.letter div.letter-div img {
+    float: left;
+    margin-bottom: -26%; }
+  section.letter div.letter-5 {
+    margin-left: 70%; }
+  section.letter div.letter-4 img {
+    margin-bottom: 15px; }
+  section.letter p.letter-name {
+    clear: both;
+    margin-bottom: 5px; }
+  section.letter p.letter-ceo {
+    margin-bottom: 0; }
+  section.letter div.letter-container {
+    background-color: #F47B29; }
+  section.letter div.letter-right {
+    padding: 64.5px 0; }
+    section.letter div.letter-right img {
+      width: 80px;
+      height: 50px;
+      margin-right: 8%;
+      margin-left: -14%; }
+    section.letter div.letter-right h5 {
+      width: 75%;
+      text-align: left;
+      margin-left: 20%;
+      color: white; }
+  section.letter div.stat-two h5, section.letter div.stat-three h5, section.letter div.stat-four h5 {
+    width: 60%; }
+  section.letter div.stat-two img, section.letter div.stat-four {
+    margin-top: 4%; }
+  section.letter div.stat-three img {
+    margin-top: 10%; }
+  section.letter div.stat-one, section.letter div.stat-two, section.letter div.stat-three {
+    border-bottom: 1px solid white; }
+
+section.sat-an-approach {
+  background-image: url("../assets/sat-an-approach.jpg");
+  background-size: cover;
+  background-position: bottom center; }
+  section.sat-an-approach div.box-one, section.sat-an-approach div.box-two, section.sat-an-approach div.box-three {
+    width: 100%;
+    margin: 0 10px;
+    padding: 40px 15px;
+    margin-bottom: 39px;
+    min-height: 60vh; }
+    section.sat-an-approach div.box-one img, section.sat-an-approach div.box-two img, section.sat-an-approach div.box-three img {
+      width: 55%; }
+  section.sat-an-approach div.box-one {
+    padding-top: 0; }
+    section.sat-an-approach div.box-one img {
+      width: 70%; }
+    section.sat-an-approach div.box-one h4 {
+      padding-top: 0; }
+  section.sat-an-approach div.box-two h4, section.sat-an-approach div.box-three h4 {
+    padding-top: 23px; }
+  section.sat-an-approach div.box-two img, section.sat-an-approach div.box-three img {
+    margin-top: -6%; }
+  section.sat-an-approach div.box-three h4 {
+    padding-top: 6px; }
+  section.sat-an-approach h1 {
+    color: white;
+    width: 60%;
+    margin: 0 auto;
+    margin-top: 60px; }
+  section.sat-an-approach p.sat-an-approach-description {
+    font-size: 16px;
+    color: white;
+    padding: 36px 70px;
+    line-height: 1.5; }
+  section.sat-an-approach div.sat-an-approach-boxes {
+    margin: 0 auto; }
+  section.sat-an-approach p.box-p {
+    text-align: left;
+    font-size: 14px;
+    color: white;
+    line-height: 1.5;
+    margin-bottom: 0; }
+  section.sat-an-approach h4 {
+    color: white;
+    font-weight: bolder;
+    padding: 30px 0;
+    margin: 0; }
+  section.sat-an-approach h4.three {
+    padding-bottom: 18px; }
+
+section.sat-results {
+  padding-top: 60px;
+  padding-bottom: 80px; }
+  section.sat-results h1 {
+    margin-top: 0;
+    margin-bottom: 1px;
+    color: #00718C; }
+  section.sat-results h1.sat-h1-2 {
+    margin-bottom: 25px; }
+  section.sat-results p {
+    width: 90%;
+    margin: 0 auto;
+    font-size: 14px; }
+  section.sat-results h2 {
+    color: #00A4C4;
+    font-weight: bolder;
+    margin-left: 5%; }
+  section.sat-results div.box{
+    text-align: left; 
+    margin: 25px 0;}
+  section.sat-results div.box img {
+    width:70px;
+    float:left;
+    margin: 20px 40px 30px;
+  }
+
+
+  section.sat-results
+  section.sat-results div.curriculum, section.sat-results div.tutors, section.sat-results div.practice, section.sat-results div.program, section.sat-results div.matching, section.sat-results div.guarantee {
+    padding-bottom: 20px; }
+
+section.sat-family {
+  background-image: url("../assets/sat-family-bg-image.png");
+  background-position: center center;
+  background-size: cover;
+  color: white; }
+  section.sat-family h1 {
+    padding-top: 60px;
+    padding-bottom: 35px;
+    margin: 0; }
+  section.sat-family p {
+    font-size: 16px;
+    padding: 0 14px;
+    margin-bottom: 60px;
+    line-height: 1.5; }
+  section.sat-family p.sat-family-description {
+    padding: 0 0 125px 20px;
+    margin-bottom: 0; }
+  section.sat-family h4 {
+    text-transform: uppercase;
+    word-spacing: 3px;
+    letter-spacing: 1px;
+    padding-bottom: 20px;
+    margin: 0;
+    padding-left: 20px; }
+  section.sat-family div.sat-family-section-two {
+    width: 90%;
+    margin: 0 auto; }
+
+section.sat-programs {
+  background-color: #298196;
+  padding-bottom: 100px; }
+  section.sat-programs h1 {
+    color: white;
+    margin: 0;
+    padding-top: 60px;
+    padding-bottom: 42px; }
+  section.sat-programs h4 {
+    color: white;
+    text-transform: uppercase;
+    padding: 26px 0;
+    font-family: "Open Sans", sans-serif;
+    margin: 0; }
+  section.sat-programs p {
+    padding: 18px 40px;
+    font-weight: bolder;
+    margin: 0;
+    background-color: #EDEDED;
+    border-right: 0.3px solid #298196; }
+  section.sat-programs ul.sat-programs-ul {
+    padding: 0;
+    position: relative;
+    border-right: 0.3px solid #298196; }
+    section.sat-programs ul.sat-programs-ul li {
+      list-style: none;
+      text-align: center;
+      padding: 20px 40px; }
+    section.sat-programs ul.sat-programs-ul li.sat-last-li {
+      padding: 30px 40px; }
+    section.sat-programs ul.sat-programs-ul li:nth-of-type(even) {
+      background-color: #EDEDED; }
+    section.sat-programs ul.sat-programs-ul li:nth-of-type(odd) {
+      background-color: white; }
+  section.sat-programs button.sat-programs-button {
+    position: absolute;
+    left: 11%;
+    bottom: 6%;
+    background-color: orange;
+    outline: none;
+    border-style: none;
+    padding: 13px 20px;
+    border-radius: 7px;
+    color: white;
+    text-transform: uppercase; }
+  section.sat-programs .sat-program-one {
+    background-color: #00A4C4;
+    border-right: 1px solid #00718C; }
+  section.sat-programs .sat-program-two {
+    background-color: #F47B29;
+    border-right: 1px solid #00718C; }
+  section.sat-programs .sat-program-three {
+    background-color: #FFCA38; }
+  section.sat-programs .sat-program-boxes {
+    padding: 0; }
+
+section.meet-our-tutors {
+  padding: 70px 0 35px 0; }
+  section.meet-our-tutors h1 {
+    color: #00718C;
+    margin: 0;
+    padding-bottom: 35px; }
+  section.meet-our-tutors p.meet-our-tutors-main-p {
+    font-size: 16px;
+    width: 95%;
+    margin: 0 auto;
+    padding-bottom: 45px; }
+  section.meet-our-tutors h4 {
+    color: #00718C;
+    margin: 0;
+    margin-bottom: 20px; }
+  section.meet-our-tutors h4.availability-h4 {
+    margin-top: 35px; }
+  section.meet-our-tutors label {
+    display: block;
+    vertical-align: middle; }
+    section.meet-our-tutors label input {
+      margin-right: 10px; }
+  section.meet-our-tutors div.selectors {
+    padding-left: 0; }
+  section.meet-our-tutors div.tutors-container {
+    border-left: 1px solid #EDEDED; }
+  section.meet-our-tutors div.tutors-content {
+    margin-left: 25px; }
+    section.meet-our-tutors div.tutors-content p {
+      font-weight: bolder; }
+      section.meet-our-tutors div.tutors-content p button {
+        font-weight: lighter;
+        background: none;
+        border: none;
+        outline: none; }
+        section.meet-our-tutors div.tutors-content p button:hover {
+          color: #F47B29;
+          text-decoration: underline; }
+        section.meet-our-tutors div.tutors-content p button:focus {
+          outline: none; }
+      section.meet-our-tutors div.tutors-content p button.button-name {
+        border-right: 1px solid #EDEDED; }
+  section.meet-our-tutors div.tutor {
+    padding: 20px 0 25px 0;
+    border-top: 1px solid #EDEDED;
+    border-bottom: 1px solid #EDEDED; }
+    section.meet-our-tutors div.tutor h4.name {
+      color: #00718C;
+      margin-bottom: 18px; }
+      section.meet-our-tutors div.tutor h4.name span.hourly-rate {
+        position: absolute;
+        right: 0;
+        color: #E2E4E5; }
+    section.meet-our-tutors div.tutor p {
+      margin: 1px 0;
+      font-size: 14px;
+      width: 95%; }
+      section.meet-our-tutors div.tutor p span {
+        color: #F47B29; }
+  section.meet-our-tutors button.clear-filters {
+    background-color: #F47B29;
+    border: none;
+    outline: none;
+    margin-top: 35px;
+    padding: 14px 32px;
+    border-radius: 7px;
+    color: white; }

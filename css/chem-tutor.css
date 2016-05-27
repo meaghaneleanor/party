@@ -1,0 +1,426 @@
+
+section.hero {
+  background-image: url("../assets/hero.jpg");
+  background-size: cover;
+  background-position: center center;
+  color: white;
+  padding: 200px 0 100px;
+  position: relative; }
+  section.hero.chemistry-hero h1 {
+  
+    max-width: 522px; }
+  section.hero button, section.hero button:active, section.hero button:hover, section.hero button:focus, section.hero .btn-primary:active, section.hero .btn-primary:hover, section.hero .btn-primary:focus {
+    background: #F47B29;
+    border: none;
+    -webkit-transform: rotate(270deg);
+            transform: rotate(270deg);
+    border-radius: 7px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    margin: 0;
+    position: absolute; }
+    section.hero button img, section.hero button:active img, section.hero button:hover img, section.hero button:focus img, section.hero .btn-primary:active img, section.hero .btn-primary:hover img, section.hero .btn-primary:focus img {
+      margin-right: 10px; }
+  section.hero .btn:focus, section.hero .btn:active:focus, section.hero .btn.active:focus, section.hero .btn.focus, section.hero .btn:active.focus, section.hero .btn.active.focus {
+    outline: none; }
+  section.hero button.open-contact {
+    right: -44px; }
+  section.hero button.close-contact {
+    left: -78px;
+    top: 44.5px;
+    z-index: 2000; }
+  section.hero .modal-dialog.modal-sm {
+    position: absolute;
+    right: 0px;
+    width: 454px; }
+  section.hero .modal-content {
+    box-shadow: none;
+    border: none;
+    border-radius: 0;
+    border-bottom-left-radius: 10px;
+    z-index: 2000;
+    text-align: center;
+    padding: 30px; }
+    section.hero .modal-content p {
+      color: #00718C;
+      margin: 5px;
+      font-weight: bold; }
+    section.hero .modal-content h2 {
+      color: #F47B29;
+      font-weight: bolder;
+      margin: 0; }
+    section.hero .modal-content form input, section.hero .modal-content form textarea {
+      background: #e1e1e1;
+      border: none;
+      outline: none;
+      max-width: 320px;
+      margin: 0 auto; }
+    section.hero .modal-content form textarea {
+      height: 122px; }
+    section.hero .modal-content form input.hero-section-modal-submit {
+      background: #F47B29;
+      color: white;
+      width: 150px;
+      margin-top: 25px;
+      letter-spacing: 1px; }
+    section.hero .modal-content ::-webkit-input-placeholder {
+      color: #414448; }
+    section.hero .modal-content :-moz-placeholder {
+      /* Firefox 18- */
+      color: #414448; }
+    section.hero .modal-content ::-moz-placeholder {
+      /* Firefox 19+ */
+      color: #414448; }
+    section.hero .modal-content :-ms-input-placeholder {
+      color: #414448; }
+  section.hero .modal.fade:not(.in) .modal-dialog {
+    -webkit-transform: translate3d(25%, 0, 0);
+    transform: translate3d(25%, 0, 0); }
+
+
+button.button-type-solid {
+  background-color: #F47B29;
+  border: none; }
+  button.button-type-solid img {
+    margin-right: 13px; }
+
+section.chemistry-hero {
+  background-image: url("../assets/hero-chemistry.jpg");
+  padding: 250px 0 150px; }
+  section.chemistry-hero h1 {
+    margin-top: 0px; }
+
+
+    section.letter {
+  padding: 50px 0; }
+  section.letter h1 {
+    color: #00718C;
+    padding-bottom: 25px; }
+  section.letter p {
+    font-size: 14px;
+    width: 88%;
+    margin-bottom: 25px; }
+  section.letter p.italic {
+    font-style: italic;
+    margin-bottom: 0; }
+  section.letter p.letter-last-p {
+    margin-bottom: 50px; }
+  section.letter p.letter-sincerely {
+    margin-bottom: 20px; }
+  section.letter div.letter-parent {
+    margin-right: -45px; }
+  section.letter div.letter-div img {
+    float: left;
+    margin-bottom: -26%; }
+  section.letter div.letter-5 {
+    margin-left: 70%; }
+  section.letter div.letter-4 img {
+    margin-bottom: 15px; }
+  section.letter p.letter-name {
+    clear: both;
+    margin-bottom: 5px; }
+  section.letter p.letter-ceo {
+    margin-bottom: 0; }
+  section.letter div.letter-container {
+    background-color: #F47B29; }
+  section.letter div.letter-right {
+    padding: 68px 0; }
+    section.letter div.letter-right div.letter-image-container {
+      width: 18%;
+      float: left;
+      margin-left: 7%; }
+    section.letter div.letter-right div.letter-fact-container {
+      width: 67%;
+      float: right; }
+      section.letter div.letter-right div.letter-fact-container h5 {
+        color: white; }
+      section.letter div.letter-right div.letter-fact-container h5.two {
+        padding-right: 15%; }
+  section.letter div.stat-one, section.letter div.stat-two, section.letter div.stat-three {
+    border-bottom: 1px solid white; }
+  section.letter div.stat-two div.letter-image-container, section.letter div.stat-four div.letter-image-container {
+    margin-top: 4%; }
+  section.letter div.stat-three div.letter-image-container {
+    margin-top: 8%; }
+
+
+section.meet-our-tutors {
+  padding: 70px 0 35px 0; }
+  section.meet-our-tutors h1 {
+    color: #00718C;
+    margin: 0;
+    padding-bottom: 35px; }
+  section.meet-our-tutors p.meet-our-tutors-main-p {
+    font-size: 16px;
+    width: 95%;
+    margin: 0 auto;
+    padding-bottom: 45px; }
+  section.meet-our-tutors h4 {
+    color: #00718C;
+    margin: 0;
+    margin-bottom: 20px; }
+  section.meet-our-tutors h4.availability-h4 {
+    margin-top: 35px; }
+  section.meet-our-tutors label {
+    display: block;
+    vertical-align: middle; }
+    section.meet-our-tutors label input {
+      margin-right: 10px; }
+  section.meet-our-tutors div.selectors {
+    padding-left: 0; }
+  section.meet-our-tutors div.tutors-container {
+    border-left: 1px solid #EDEDED; }
+  section.meet-our-tutors div.tutors-content {
+    margin-left: 25px; }
+    section.meet-our-tutors div.tutors-content p {
+      font-weight: bolder; }
+      section.meet-our-tutors div.tutors-content p button {
+        font-weight: lighter;
+        background: none;
+        border: none;
+        outline: none; }
+        section.meet-our-tutors div.tutors-content p button:hover {
+          color: #F47B29;
+          text-decoration: underline; }
+        section.meet-our-tutors div.tutors-content p button:focus {
+          outline: none; }
+      section.meet-our-tutors div.tutors-content p button.button-name {
+        border-right: 1px solid #EDEDED; }
+  section.meet-our-tutors div.tutor {
+    padding: 20px 0 25px 0;
+    border-top: 1px solid #EDEDED;
+    border-bottom: 1px solid #EDEDED; }
+    section.meet-our-tutors div.tutor h4.name {
+      color: #00718C;
+      margin-bottom: 18px; }
+      section.meet-our-tutors div.tutor h4.name span.hourly-rate {
+        position: absolute;
+        right: 0;
+        color: #E2E4E5; }
+    section.meet-our-tutors div.tutor p {
+      margin: 1px 0;
+      font-size: 14px;
+      width: 95%; }
+      section.meet-our-tutors div.tutor p span {
+        color: #F47B29; }
+  section.meet-our-tutors button.clear-filters {
+    background-color: #F47B29;
+    border: none;
+    outline: none;
+    margin-top: 35px;
+    padding: 14px 32px;
+    border-radius: 7px;
+    color: white; }
+
+section.tutoring-options-menu div.container-fluid, section.tutoring-options-menu div.collapse.navbar-collapse {
+  padding: 0; }
+
+section.tutoring-options-menu .navbar-default {
+  border: none;
+  border-radius: 0;
+  margin-bottom: 0;
+  padding: 0px 40px;
+  background-color: #00A4C4; }
+  section.tutoring-options-menu .navbar-default .navbar-nav .active a, section.tutoring-options-menu .navbar-default .navbar-default .navbar-nav .active a:hover, section.tutoring-options-menu .navbar-default .navbar-default .navbar-nav .active a:focus {
+    background-color: #00A4C4;
+    color: #113e49; }
+  section.tutoring-options-menu .navbar-default a {
+    color: white;
+    font-family: "Open Sans", sans-serif;
+    font-size: 13px;
+    padding: 7px 15px; }
+    section.tutoring-options-menu .navbar-default a:hover {
+      color: #113e49; }
+  section.tutoring-options-menu .navbar-default .navbar-header {
+    display: none; }
+
+
+
+section.one-to-one {
+  background-size: cover;
+  background-position: center center;
+
+  padding: 40px 0; }
+  section.one-to-one div {
+    padding: 10px 0px; }
+    section.one-to-one div h2 {
+      font-weight: bolder;
+      margin-bottom: 34px;
+      margin-top: 10px; }
+    section.one-to-one div p {
+      line-height: 1.6rem;
+      padding: 0 20px; }
+  section.one-to-one img {
+    max-width: 180px;
+    margin: 0 auto;
+    display: block; }
+  section.one-to-one img.icon-chem {
+    width: 150px;
+    margin-bottom: 45px; }
+
+section.one-to-one.chem {
+  background-image: url("../assets/chem-one-to-one.jpg");
+  color: white; }
+
+section.expert-team {
+  padding: 40px 0; }
+  section.expert-team img.expert-img {
+    width: 50%; }
+  section.expert-team .expert-boxes {
+    float: right;
+    width: 50%; }
+  section.expert-team h1 {
+    margin-bottom: 55px; }
+  section.expert-team h1, section.expert-team h4 {
+    color: #00718C;
+    font-weight: bold; }
+  section.expert-team p {
+    line-height: 1.6rem;
+    margin-bottom: 40px; }
+  section.expert-team h4 {
+    max-width: 480px;
+    margin-top: 0; }
+  section.expert-team img.icon {
+    max-width: 180px;
+    float: left;
+    padding: 0 20px; }
+  section.expert-team .button-div {
+    text-align: center;
+    margin-top: 20px; }
+
+section.happy {
+  padding: 40px 0 60px;
+  background: #f0f0f0; }
+  section.happy h1 {
+    color: #00718C;
+    margin-bottom: 30px; }
+  section.happy p {
+    padding-right: 20px;
+    margin-bottom: 15px;
+    line-height: 1.6rem; }
+  section.happy img {
+    margin: 0 auto;
+    display: block; }
+
+
+    @media (max-width: 991px) {
+  section.letter div.stat-one div.letter-fact-container h5 {
+    padding-right: 10px; }
+  section.letter div.stat-one div.letter-image-container {
+    margin-top: 4%; }
+  section.letter div.letter-parent {
+    margin-right: 0; }
+  section.letter p {
+    width: 98%; } }
+
+@media (max-width: 766px) {
+  section.letter h1 {
+    text-align: center; }
+  section.letter div.letter-parent {
+    width: 93%;
+    margin: 0 auto; }
+  section.letter div.letter-container {
+    background-color: white;
+    margin-top: 10%; }
+  section.letter div.letter-stats {
+    background-color: #F47B29;
+    width: 98%;
+    margin: 0 auto; }
+  section.letter div.letter-div img {
+    margin-bottom: -20%; }
+  section.letter div.letter-right {
+    padding: 30px 0; }
+    section.letter div.letter-right div.letter-image-container {
+      float: none;
+      margin: 0 auto; }
+      section.letter div.letter-right div.letter-image-container img {
+        margin-bottom: 15%; }
+    section.letter div.letter-right div.letter-fact-container {
+      float: none;
+      width: 90%;
+      margin: 0 auto; }
+      section.letter div.letter-right div.letter-fact-container h5 {
+        text-align: center;
+        clear: both; }
+      section.letter div.letter-right div.letter-fact-container h5.two {
+        padding-right: 0; } }
+
+@media (max-width: 480px) {
+  section.letter h1 {
+    font-size: 30px; } }
+
+@media (max-width: 375px) {
+  section.letter div.letter-5 {
+    top: 88%; } }
+
+    @media (max-width: 991px) {
+  section.one-to-one .one-to-one-div {
+    margin-bottom: 30px; }
+    section.one-to-one .one-to-one-div img {
+      float: left;
+      width: 200px;
+      margin-right: 60px;
+      margin-bottom: 30px;
+      display: block; }
+    section.one-to-one .one-to-one-div img.icon-chem {
+      margin-bottom: 0px; }
+  section.one-to-one h1 {
+    padding: 0 15%; }
+  section.one-to-one h2 {
+    text-align: left; } }
+
+@media (max-width: 700px) {
+  section.one-to-one .one-to-one-div img {
+    float: none;
+    margin-right: 0;
+    margin: 0 auto; }
+  section.one-to-one h2 {
+    text-align: center; } }
+
+@media (max-width: 530px) {
+  section.one-to-one h1 {
+    padding: 0; } }
+
+@media (max-width: 1170px) {
+  section.expert-team img.icon {
+    margin-bottom: 20px; } }
+
+@media (max-width: 1030px) {
+  section.expert-team img.expert-img {
+    width: 80%;
+    margin: 0 auto 70px;
+    display: block;
+    float: none; }
+  section.expert-team div.expert-boxes {
+    width: 100%;
+    float: none; }
+  section.expert-team h4 {
+    max-width: 1000px; }
+  section.expert-team img.icon, section.expert-team .expert-second img.icon {
+    margin: 0; }
+  section.expert-team img.expert-img {
+    margin-bottom: 30px; }
+  section.expert-team .expert-first .expert-point, section.expert-team .expert-second .expert-point, section.expert-team .expert-third .expert-point {
+    margin-bottom: 80px;
+    padding-top: 30px; }
+  section.expert-team .expert-third h4 {
+    margin-top: 0; } }
+
+@media (max-width: 640px) {
+  section.expert-team img.icon, section.expert-team .expert-second img.icon {
+    float: none;
+    margin: 0 auto;
+    display: block; }
+  section.expert-team .expert-first .expert-point, section.expert-team .expert-second .expert-point, section.expert-team .expert-third .expert-point {
+    margin-bottom: 30px; }
+  section.expert-team img.expert-img {
+    width: 100%; } }
+
+@media (max-width: 992px) {
+  section.happy img {
+    width: 100%;
+    margin-top: 30px; } }
+
+@media (max-width: 992px) {
+  section.meet-our-tutors div.container {
+    width: 95%; } }
