@@ -29,17 +29,6 @@ h5 {
   max-width: 80%;
   margin: 0 auto; }
 
-button.button-type-solid {
-  background-color: #F47B29;
-  border: none; }
-  button.button-type-solid img {
-    margin-right: 13px; }
-
-.carousel-control.left, .carousel-control.right {
-  background-image: none; }
-  .carousel-control.left img, .carousel-control.right img {
-    width: 80px; }
-
 header {
   padding: 0px 0px 0 40px;
   position: relative;
@@ -138,7 +127,7 @@ section.hero {
   padding: 200px 0 100px;
   position: relative; }
   section.hero h1 {
-    margin: 0;
+    margin: 0 0 0 128px;
     max-width: 522px; }
   section.hero button, section.hero button:active, section.hero button:hover, section.hero button:focus, section.hero .btn-primary:active, section.hero .btn-primary:hover, section.hero .btn-primary:focus {
     background: #F47B29;
@@ -155,10 +144,11 @@ section.hero {
   section.hero .btn:focus, section.hero .btn:active:focus, section.hero .btn.active:focus, section.hero .btn.focus, section.hero .btn:active.focus, section.hero .btn.active.focus {
     outline: none; }
   section.hero button.open-contact {
-    right: -44px; }
+    right: -42px;
+    bottom: 36%; }
   section.hero button.close-contact {
-    left: -78px;
-    top: 44.5px;
+    left: -77px;
+    top: 42.5px;
     z-index: 2000; }
   section.hero .modal-dialog.modal-sm {
     position: absolute;
@@ -324,10 +314,10 @@ section.process {
       margin-bottom: 7px; }
   section.process .carousel-control.left {
     text-align: left;
-    margin-top: 40px; }
+    margin-top: 23px; }
   section.process .carousel-control.right {
     text-align: right;
-    margin-top: 40px;
+    margin-top: 23px;
     right: 20px; }
   section.process .carousel-inner {
     width: 90%; }
@@ -454,7 +444,8 @@ section.tabs-home {
     border-color: #00A4C4;
     background-color: #00A4C4; }
   #testimonials ol.carousel-indicators li.active {
-    background-color: white; }
+    background-color: white;
+    border: white; }
 
 div.carousel-inner {
   width: 78%;
@@ -463,9 +454,10 @@ div.carousel-inner {
 div.home-carousel-indicators {
   margin-bottom: 22px; }
 
-a.left.carousel-control, a.right.carousel-control {
+.carousel-control.left, .carousel-control.right {
   background-image: none; }
-  a.left.carousel-control img, a.right.carousel-control img {
+  .carousel-control.left img, .carousel-control.right img {
+    width: 80px;
     margin-top: 50px; }
 
 a.left.carousel-control img {
@@ -480,8 +472,14 @@ p.testimonial-text {
   color: white;
   font-style: italic;
   line-height: 46px;
-  font-weight: lighter;
-  margin-bottom: 115px; }
+  font-weight: lighter; }
+
+p.caption {
+  margin-bottom: 115px;
+  color: white;
+  text-align: right;
+  font-size: 18px;
+  margin-right: 20px; }
 
 div.home-testimonial-call-box {
   width: 44%;
@@ -499,6 +497,9 @@ div.home-testimonial-call-box {
   div.home-testimonial-call-box p, div.home-testimonial-call-box p.or {
     margin-top: 20px;
     padding: 0; }
+    div.home-testimonial-call-box p a, div.home-testimonial-call-box p.or a {
+      text-decoration: none;
+      color: #00A4C4; }
   div.home-testimonial-call-box p.or {
     color: #575B60;
     margin-bottom: 18px; }
@@ -512,13 +513,22 @@ div.home-testimonial-call-box {
       margin-right: 38px; }
       div.home-testimonial-call-box h1.number span img {
         padding-bottom: 12px; }
+    div.home-testimonial-call-box h1.number a {
+      text-decoration: none;
+      color: #F47B29; }
 
 button.callButton {
   background-color: #F47B29;
-  padding: 14px 16px;
+  padding: 14px 20px;
   border-radius: 7px;
   margin-bottom: 23px;
-  margin-left: 0; }
+  margin-left: 0;
+  outline: none;
+  border-style: none;
+  font-family: "Open Sans", sans-serif;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 1px; }
 
 div.testimonial-form h1 {
   color: #00718C;
@@ -598,35 +608,39 @@ div.testimonial-form select.state {
   background: transparent url("../assets/form-arrow.png") no-repeat 94% center; }
 
 div.sponsors {
-  padding-bottom: 42px; }
+  padding-bottom: 36px; }
+  div.sponsors div.sponsor img {
+    margin: 0 auto; }
+  div.sponsors div.inc5000 img, div.sponsors div.ny-times img {
+    padding-top: 2%; }
 
 .home-program-orange {
   background-color: #EE9243;
   /*Used secondary orange - not sure if its correct*/
-  height: 317px;
-  padding: 0; }
+  padding: 15px;
+  margin-top: -1px; }
 
 .home-program-yellow {
   background-color: #F2C446;
   /*Used secondary yellow - not sure if its correct*/
-  height: 317px;
-  padding: 0; }
+  padding: 15px;
+  margin-top: -1px; }
 
 .home-program-dark-blue {
   background-color: #298196;
   /*Used secondary dark-blue - not sure if its correct*/
-  height: 317px;
-  padding: 0; }
+  padding: 15px;
+  margin-top: -1px; }
 
 .home-program-light-blue {
   background-color: #51B2C6;
   /*Used secondary light-blue - not sure if its correct*/
-  height: 317px;
-  padding: 0; }
+  padding: 15px;
+  margin-top: -1px; }
 
 .programs h3 {
   color: white;
-  padding-top: 38px;
+  padding-top: 42px;
   padding-left: 30px;
   padding-bottom: 0;
   margin: 0; }
@@ -638,7 +652,10 @@ div.sponsors {
   margin-top: 36px;
   font-weight: lighter; }
 
-button {
+div.programs-text {
+  min-height: 15vh; }
+
+section.programs button {
   outline: none;
   margin-left: 30px;
   background-color: transparent;
@@ -651,48 +668,15 @@ button {
   text-transform: uppercase;
   letter-spacing: .7px;
   font-size: 13px;
-  margin-bottom: 34px; }
+  margin-top: 20px;
+  margin-bottom: 34px;
+  letter-spacing: 1px; }
 
 .home-program-orange p, .home-program-yellow p, .home-program-dark-blue p {
   margin-bottom: 50px; }
 
 .home-program-light-blue p {
   margin-bottom: 28px; }
-
-footer {
-  padding: 32px 0;
-  background-color: #E2E2E4; }
-  footer .logo img {
-    padding-bottom: 25px;
-    max-width: 100%; }
-  footer .logo p {
-    color: #414448;
-    font-size: 14px;
-    margin-bottom: 0; }
-
-div.footer-nav {
-  padding: 0; }
-  div.footer-nav nav {
-    padding: 0;
-    padding-left: 68px; }
-    div.footer-nav nav ul {
-      padding: 0; }
-      div.footer-nav nav ul li {
-        list-style: none;
-        line-height: 24px; }
-        div.footer-nav nav ul li a {
-          font-size: 13px;
-          color: #00718C; }
-  div.footer-nav .nav-one {
-    padding-left: 60px; }
-  div.footer-nav .nav-two {
-    padding-left: 64px; }
-
-div.fine-print p {
-  padding-top: 19px;
-  color: #575B60;
-  font-size: 12px;
-  line-height: 20px; }
 
 section.sat-hero {
   background-image: url("../assets/sat-hero.jpg");
@@ -763,20 +747,26 @@ section.sat-an-approach {
     width: 100%;
     margin: 0 10px;
     padding: 40px 15px;
-    margin-bottom: 39px;
-    min-height: 60vh; }
+    margin-bottom: 39px; }
     section.sat-an-approach div.box-one img, section.sat-an-approach div.box-two img, section.sat-an-approach div.box-three img {
-      width: 55%; }
+      width: 44%; }
   section.sat-an-approach div.box-one {
     padding-top: 0; }
     section.sat-an-approach div.box-one img {
-      width: 70%; }
+      width: 65%;
+      margin-top: -5%; }
     section.sat-an-approach div.box-one h4 {
       padding-top: 0; }
+    section.sat-an-approach div.box-one p {
+      width: 90%;
+      margin-left: 22px; }
   section.sat-an-approach div.box-two h4, section.sat-an-approach div.box-three h4 {
     padding-top: 23px; }
   section.sat-an-approach div.box-two img, section.sat-an-approach div.box-three img {
     margin-top: -6%; }
+  section.sat-an-approach div.box-two p {
+    width: 88%;
+    margin-left: 20px; }
   section.sat-an-approach div.box-three h4 {
     padding-top: 6px; }
   section.sat-an-approach h1 {
@@ -796,7 +786,8 @@ section.sat-an-approach {
     font-size: 14px;
     color: white;
     line-height: 1.5;
-    margin-bottom: 0; }
+    margin-bottom: 0;
+    margin-top: 5px; }
   section.sat-an-approach h4 {
     color: white;
     font-weight: bolder;
@@ -817,19 +808,21 @@ section.sat-results {
   section.sat-results p {
     width: 90%;
     margin: 0 auto;
-    font-size: 14px; }
+    font-size: 14px;
+    text-align: left; }
   section.sat-results img {
     float: left;
     width: 20%; }
   section.sat-results h3 {
     color: #00A4C4;
     font-weight: bolder;
-    margin-left: 5%; }
+    margin-left: 5%;
+    margin-top: 1%; }
   section.sat-results div.results-description {
     float: left;
     width: 80%; }
   section.sat-results div.curriculum, section.sat-results div.tutors, section.sat-results div.practice, section.sat-results div.program, section.sat-results div.matching, section.sat-results div.guarantee {
-    padding-bottom: 20px; }
+    margin-bottom: 30%; }
 
 section.sat-family {
   background-image: url("../assets/sat-family-bg-image.png");
@@ -857,7 +850,18 @@ section.sat-family {
     padding-left: 20px; }
   section.sat-family div.sat-family-section-two {
     width: 90%;
-    margin: 0 auto; }
+    margin: 0 auto;
+    margin-left: 9%; }
+  section.sat-family div.family-image-container {
+    float: left;
+    width: 15%; }
+    section.sat-family div.family-image-container img {
+      max-width: 100%;
+      width: 100%; }
+  section.sat-family div.family-paragraph {
+    float: left;
+    width: 68%;
+    margin-left: 2%; }
 
 section.sat-programs {
   background-color: #298196;
@@ -930,7 +934,7 @@ section.meet-our-tutors {
     color: #00718C;
     margin: 0;
     margin-bottom: 20px; }
-  section.meet-our-tutors h4.scheduling-h4, section.meet-our-tutors h4.math-page-hourly-h4, section.meet-our-tutors h4.availability-h4 {
+  section.meet-our-tutors h4.availability-h4 {
     margin-top: 35px; }
   section.meet-our-tutors label {
     display: block;
@@ -949,20 +953,14 @@ section.meet-our-tutors {
         font-weight: lighter;
         background: none;
         border: none;
-        border-radius: 0;
-        outline: none;
-        padding: 10px;
-        color: #414448;
-        margin-left: 20px;
-        text-transform: capitalize; }
+        outline: none; }
         section.meet-our-tutors div.tutors-content p button:hover {
           color: #F47B29;
           text-decoration: underline; }
         section.meet-our-tutors div.tutors-content p button:focus {
           outline: none; }
       section.meet-our-tutors div.tutors-content p button.button-name {
-        border-right: 1px solid #EDEDED;
-        padding-right: 30px; }
+        border-right: 1px solid #EDEDED; }
   section.meet-our-tutors div.tutor {
     padding: 20px 0 25px 0;
     border-top: 1px solid #EDEDED;
@@ -988,6 +986,78 @@ section.meet-our-tutors {
     padding: 14px 32px;
     border-radius: 7px;
     color: white; }
+
+section.hero.math-hero {
+  background-image: url("../assets/math-hero.jpg");
+  padding: 230px 0 150px; }
+
+section.math-an-approach {
+  background: white;
+  padding: 60px 0; }
+  section.math-an-approach p.math-an-approach-description {
+    line-height: 1.8rem;
+    font-size: 16px;
+    max-width: 80%;
+    margin: 30px auto 60px; }
+  section.math-an-approach p {
+    color: #414448; }
+  section.math-an-approach h1, section.math-an-approach h2 {
+    color: #00718C; }
+  section.math-an-approach .box-one img, section.math-an-approach .box-three img {
+    max-width: 70px; }
+  section.math-an-approach .box-two img {
+    width: 200px; }
+  section.math-an-approach h1 {
+    max-width: 70%;
+    margin: 30px auto; }
+  section.math-an-approach h2 {
+    font-weight: bold;
+    max-width: 220px;
+    margin: 30px auto; }
+  section.math-an-approach .box-two h2 {
+    margin: 15px auto 30px; }
+  section.math-an-approach p.box-p {
+    max-width: 255px;
+    margin: 0 auto;
+    text-align: left;
+    line-height: 1.6rem; }
+
+section.find {
+  background-image: url("../assets/math-find.jpg");
+  background-size: cover;
+  background-position: center center;
+  padding: 60px 0; }
+  section.find h1 {
+    color: #00718C;
+    text-align: center;
+    margin-bottom: 30px; }
+  section.find .find-box {
+    background-color: rgba(255, 255, 255, 0.8);
+    margin: 10px;
+    padding: 10px;
+    width: calc(25% - 20px);
+    float: left; }
+    section.find .find-box h2 {
+      text-align: center;
+      margin: 30px auto;
+      font-weight: 700;
+      max-width: 185px; }
+    section.find .find-box h2.elementary {
+      margin: 10px auto; }
+    section.find .find-box button {
+      width: 140px;
+      padding: 10px 0;
+      margin: 0 auto 30px; }
+    section.find .find-box .button-div {
+      text-align: center;
+      margin-top: 20px; }
+    section.find .find-box .button-div.elem-button {
+      margin-top: 16px; }
+    section.find .find-box a {
+      color: white;
+      padding: 10px 25px; }
+      section.find .find-box a:hover {
+        text-decoration: none; }
 
 section.chemistry-hero {
   background-image: url("../assets/hero-chemistry.jpg");
@@ -1082,27 +1152,238 @@ section.happy {
     margin: 0 auto;
     display: block; }
 
-section.sat-an-approach.math {
-  background: white; }
-  section.sat-an-approach.math p {
-    color: #414448; }
-  section.sat-an-approach.math h1, section.sat-an-approach.math h4 {
-    color: #00718C; }
-  section.sat-an-approach.math .box-one img, section.sat-an-approach.math .box-three img {
-    max-width: 70px; }
-  section.sat-an-approach.math .box-two img {
-    width: 200px; }
-  section.sat-an-approach.math .box-one h4, section.sat-an-approach.math .box-three h4 {
-    margin-bottom: 50px; }
-
-section.find {
-  background-image: url("../assets/math-find.jpg");
+section.about-us-hero {
+  background-image: url("../assets/about-us-hero-bg.png");
   background-size: cover;
-  background-position: center center; }
-  section.find h1 {
-    color: #00718C; }
-  section.find .find-box {
-    background-color: rgba(255, 255, 255, 0.5); }
+  background-position: bottom center;
+  padding: 150px 0; }
+  section.about-us-hero h1 {
+    margin: 0;
+    margin-bottom: 50px;
+    margin-top: 80px; }
+  section.about-us-hero p.header-link-buttons {
+    border: 2px solid white;
+    background: none;
+    border-radius: 6px;
+    width: 15%;
+    text-align: center;
+    padding: 5px;
+    float: left;
+    margin: 0 15px 0 0; }
+    section.about-us-hero p.header-link-buttons a {
+      color: white;
+      padding: 10px; }
+
+section.about-us-our-story {
+  padding: 60px 0; }
+  section.about-us-our-story h1 {
+    margin-top: 0;
+    color: #00718C;
+    margin-bottom: 35px; }
+  section.about-us-our-story div.our-story-p1 {
+    padding-right: 3%; }
+  section.about-us-our-story div.our-story-p2 {
+    padding-left: 3%; }
+
+section.about-us-the-team {
+  background-color: #F0F0F0;
+  padding: 60px 0 20px 0; }
+  section.about-us-the-team h1 {
+    color: #00718C;
+    margin-bottom: 50px;
+    margin-top: 0; }
+  section.about-us-the-team div.team-member {
+    position: relative; }
+    section.about-us-the-team div.team-member img {
+      width: 100%; }
+    section.about-us-the-team div.team-member div.overlay {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      left: 0;
+      background-color: #00718C;
+      opacity: 0;
+      transition: .2s; }
+      section.about-us-the-team div.team-member div.overlay:hover, section.about-us-the-team div.team-member div.overlay:active {
+        opacity: 1; }
+      section.about-us-the-team div.team-member div.overlay div.overlayText p.bio {
+        padding: 37px 0 25px 25px;
+        width: 90%;
+        margin-bottom: 0;
+        color: white;
+        line-height: 1.7; }
+      section.about-us-the-team div.team-member div.overlay div.overlayText p.learn-more {
+        padding-left: 25px;
+        margin-bottom: 29px; }
+        section.about-us-the-team div.team-member div.overlay div.overlayText p.learn-more a {
+          text-decoration: none;
+          color: white; }
+          section.about-us-the-team div.team-member div.overlay div.overlayText p.learn-more a:hover {
+            text-decoration: underline;
+            color: white; }
+          section.about-us-the-team div.team-member div.overlay div.overlayText p.learn-more a span.glyphicon {
+            font-size: 10px; }
+      section.about-us-the-team div.team-member div.overlay div.overlayText div.team-member-info2 {
+        width: 85%;
+        margin: 0 auto;
+        border-top: 2px solid #00A4C4; }
+        section.about-us-the-team div.team-member div.overlay div.overlayText div.team-member-info2 h4 {
+          margin-bottom: 3px;
+          color: white;
+          margin-top: 12px; }
+        section.about-us-the-team div.team-member div.overlay div.overlayText div.team-member-info2 p {
+          color: white; }
+  section.about-us-the-team div.team-member-info {
+    background-color: #00A4C4;
+    width: 100%;
+    margin-bottom: 40px; }
+    section.about-us-the-team div.team-member-info h4, section.about-us-the-team div.team-member-info p {
+      color: white; }
+    section.about-us-the-team div.team-member-info h4 {
+      margin: 0;
+      padding-top: 15px;
+      padding-bottom: 5px; }
+    section.about-us-the-team div.team-member-info p {
+      margin: 0;
+      padding-bottom: 18px; }
+
+section.about-us-careers {
+  padding: 55px 0; }
+  section.about-us-careers h1 {
+    color: #00718C;
+    margin-bottom: 35px;
+    margin-top: 0; }
+  section.about-us-careers div.careers-about {
+    margin-bottom: 35px; }
+  section.about-us-careers div.mentor-callout-box {
+    background-color: #F47B29;
+    padding: 42px; }
+    section.about-us-careers div.mentor-callout-box h4 {
+      float: left;
+      width: 45%;
+      color: white;
+      line-height: 1.3;
+      margin: 0; }
+    section.about-us-careers div.mentor-callout-box button {
+      float: right;
+      background-color: #F47B29;
+      border-style: none;
+      border: 2px solid white;
+      border-radius: 7px;
+      padding: 10px 22px;
+      margin-top: 1%;
+      color: white;
+      outline: none; }
+  section.about-us-careers div.internships {
+    border-top: 1px solid #E2E4E5;
+    border-bottom: 1px solid #E2E4E5;
+    padding: 35px 0;
+    margin-bottom: 35px; }
+    section.about-us-careers div.internships p {
+      font-size: 16px;
+      margin: 0; }
+    section.about-us-careers div.internships h2 {
+      color: #00718C;
+      font-weight: bolder;
+      margin-top: 0;
+      margin-bottom: 36px; }
+
+section.about-us-careers div.posting div.panel.panel-default {
+  border-color: white;
+  box-shadow: none;
+  margin-bottom: 30px; }
+
+section.about-us-careers div.posting .panel-heading {
+  background: transparent;
+  border: none; }
+
+section.about-us-careers div.posting #headingOne, section.about-us-careers div.posting #headingTwo {
+  padding: 0; }
+
+section.about-us-careers div.posting .panel-default > .panel-heading + .panel-collapse > .panel-body {
+  border: none; }
+  section.about-us-careers div.posting .panel-default > .panel-heading + .panel-collapse > .panel-body button {
+    background-color: #F47B29;
+    border-style: none;
+    border-radius: 7px;
+    padding: 10px 22px;
+    color: white;
+    outline: none;
+    text-align: right;
+    margin-left: 86%; }
+
+section.about-us-careers div.posting h4 {
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px; }
+
+section.about-us-careers div.posting a {
+  text-decoration: none; }
+  section.about-us-careers div.posting a span {
+    position: relative;
+    top: -3px;
+    padding-right: 8px; }
+    section.about-us-careers div.posting a span img {
+      transition-duration: .5s;
+      transition-property: -webkit-transform;
+      transition-property: transform;
+      transition-property: transform, -webkit-transform; }
+
+section.about-us-careers div.current-positions {
+  border-top: 1px solid #E2E4E5;
+  border-bottom: 1px solid #E2E4E5;
+  padding: 35px 0; }
+  section.about-us-careers div.current-positions h2 {
+    font-weight: bolder;
+    color: #00718C;
+    margin-top: 0;
+    margin-bottom: 36px; }
+
+section.tutor-landing-section {
+  padding: 120px 0 45px; }
+  section.tutor-landing-section h1 {
+    padding-left: 0; }
+  section.tutor-landing-section div.tutor-row1-container img {
+    float: left; }
+  section.tutor-landing-section div.tutor-row1-container div.tutor-schedule {
+    float: left;
+    margin-left: 10%; }
+    section.tutor-landing-section div.tutor-row1-container div.tutor-schedule h2 {
+      color: #00718C;
+      font-weight: bolder; }
+
+footer {
+  padding: 32px 0;
+  background-color: #E2E2E4; }
+  footer .logo img {
+    padding-bottom: 25px;
+    max-width: 100%; }
+  footer .logo p {
+    color: #414448;
+    font-size: 14px;
+    margin-bottom: 0; }
+
+div.footer-nav {
+  padding: 0; }
+  div.footer-nav nav {
+    padding: 0;
+    padding-left: 68px; }
+    div.footer-nav nav li {
+      list-style: none;
+      line-height: 24px; }
+      div.footer-nav nav li a {
+        font-size: 13px;
+        color: #298196; }
+  div.footer-nav .nav-one {
+    padding-left: 60px; }
+  div.footer-nav .nav-two {
+    padding-left: 64px; }
+
+div.fine-print p {
+  padding-top: 19px;
+  color: #575B60;
+  font-size: 12px;
+  line-height: 20px; }
 
 @media (max-width: 1135px) {
   header .navbar-default li.dropdown.open {
@@ -1168,6 +1449,81 @@ section.find {
     header.navbar-fixed-top nav.navbar-default {
       bottom: 32px; } }
 
+@media (max-width: 2000px) and (min-width: 1080px) {
+  section.programs .home-program-orange, section.programs .home-program-yellow, section.programs .home-program-dark-blue, section.programs .home-program-light-blue {
+    min-height: 37vh; } }
+
+@media (max-width: 1200px) {
+  section.process ol.carousel-indicators img.arrow,
+  section.process ol.carousel-indicators img.carousel-blue.arrow {
+    position: static;
+    display: none; } }
+
+@media (max-width: 1080px) {
+  section.programs .home-program-yellow h3 {
+    width: 80%; }
+  section.programs .home-program-yellow p {
+    margin-top: 10px; } }
+
+@media (max-width: 960px) {
+  section.numbers .stats div {
+    padding: 40px 10px; }
+  section.programs .home-program-orange, section.programs .home-program-yellow, section.programs .home-program-dark-blue, section.programs .home-program-light-blue {
+    min-height: 60vh; } }
+
+@media (max-width: 870px) {
+  section.process ol {
+    display: none; }
+  section.process p {
+    margin-bottom: 50px; }
+  section.programs .home-program-dark-blue h3 {
+    width: 80%; }
+  section.programs .home-program-dark-blue p {
+    margin-top: 10px; }
+  section.programs .home-program-orange, section.programs .home-program-yellow, section.programs .home-program-dark-blue, section.programs .home-program-light-blue {
+    min-height: 70vh; } }
+
+@media (max-width: 768px) {
+  section.numbers .stats div {
+    padding: 10px; } }
+
+@media (max-width: 767px) {
+  section.hero div.hero-modal div.modal-dialog.modal-sm, section.sat-hero div.modal div.modal-dialog.modal-sm, section.about-us-hero div.modal div.modal-dialog.modal-sm {
+    right: -10px; } }
+
+@media (max-width: 750px) {
+  section.hero h1 {
+    margin-left: 5%;
+    padding-right: 5%; } }
+
+@media (max-width: 550px) {
+  section.hero h1 {
+    padding-right: 14%; } }
+
+@media (max-width: 510px) {
+  section.hero div.hero-modal div.modal-dialog.modal-sm, section.sat-hero div.modal div.modal-dialog.modal-sm, section.about-us-hero div.modal div.modal-dialog.modal-sm {
+    width: 355px; } }
+
+@media (max-width: 480px) {
+  section.hero h1 {
+    font-size: 35px; } }
+
+@media (max-width: 400px) {
+  section.hero div.hero-modal div.modal-dialog.modal-sm div.modal-content div.form-group input, section.hero div.hero-modal div.modal-dialog.modal-sm div.modal-content textarea, section.sat-hero div.modal div.modal-dialog.modal-sm div.modal-content div.form-group input, section.sat-hero div.modal div.modal-dialog.modal-sm div.modal-content textarea, section.about-us-hero div.modal div.modal-dialog.modal-sm div.modal-content div.form-group input, section.about-us-hero div.modal div.modal-dialog.modal-sm div.modal-content textarea {
+    width: 95%; } }
+
+@media (max-width: 375px) {
+  section.hero div.hero-modal div.modal-dialog.modal-sm, section.sat-hero div.modal div.modal-dialog.modal-sm, section.about-us-hero div.modal div.modal-dialog.modal-sm {
+    width: 285px; }
+    section.hero div.hero-modal div.modal-dialog.modal-sm div.modal-content h2, section.sat-hero div.modal div.modal-dialog.modal-sm div.modal-content h2, section.about-us-hero div.modal div.modal-dialog.modal-sm div.modal-content h2 {
+      font-size: 25px; } }
+
+@media (max-width: 350px) {
+  section.hero h1 {
+    font-size: 32px; }
+  section.hero div.hero-modal div.modal-dialog.modal-sm, section.sat-hero div.modal div.modal-dialog.modal-sm, section.about-us-hero div.modal div.modal-dialog.modal-sm {
+    width: 275px; } }
+
 @media (max-width: 960px) {
   section.numbers .stats div {
     padding: 40px 10px; }
@@ -1177,6 +1533,19 @@ section.find {
 @media (max-width: 768px) {
   section.numbers .stats div {
     padding: 10px; } }
+
+@media (max-width: 480px) {
+  section.numbers h1.numbers-heading {
+    font-size: 30px;
+    padding: 0 13px; }
+  section.numbers div.stats div.col-sm-4 {
+    padding-bottom: 20px;
+    padding-top: 20px; }
+  section.numbers div.stats div.col-sm-4:first-of-type {
+    border-bottom: 1px solid #E2E4E5;
+    padding-top: 0; }
+  section.numbers div.stats div.col-sm-4:last-of-type {
+    border-top: 1px solid #E2E4E5; } }
 
 @media (max-width: 1094px) {
   section.process ol.carousel-indicators {
@@ -1217,6 +1586,20 @@ section.find {
   section.process .item h3 {
     font-size: 20px; } }
 
+@media (max-width: 480px) {
+  section.process h1 {
+    font-size: 30px; } }
+
+@media (max-width: 375px) {
+  section.process a.carousel-control.right {
+    right: 32px; } }
+
+@media (max-width: 350px) {
+  section.process a.carousel-control.right, section.process a.carousel-control.left {
+    margin-top: 45px; }
+  section.process div.tutor h2 {
+    padding-bottom: 26px; } }
+
 @media (max-width: 991px) {
   section.tabs-home .nav li {
     padding: 9px; } }
@@ -1230,32 +1613,6 @@ section.find {
     display: none; }
   section.tabs-home div.tabs-mobile {
     display: block; } }
-
-@media (max-width: 2000px) and (min-width: 1080px) {
-  section.programs .home-program-orange, section.programs .home-program-yellow, section.programs .home-program-dark-blue, section.programs .home-program-light-blue {
-    min-height: 37vh; } }
-
-@media (max-width: 1080px) {
-  section.programs .home-program-yellow h3 {
-    width: 80%; }
-  section.programs .home-program-yellow p {
-    margin-top: 10px; } }
-
-@media (max-width: 971px) {
-  section.programs .home-program-orange, section.programs .home-program-yellow, section.programs .home-program-dark-blue, section.programs .home-program-light-blue {
-    min-height: 50vh; } }
-
-@media (max-width: 960px) {
-  section.programs .home-program-orange, section.programs .home-program-yellow, section.programs .home-program-dark-blue, section.programs .home-program-light-blue {
-    min-height: 60vh; } }
-
-@media (max-width: 870px) {
-  section.programs .home-program-dark-blue h3 {
-    width: 80%; }
-  section.programs .home-program-dark-blue p {
-    margin-top: 10px; }
-  section.programs .home-program-orange, section.programs .home-program-yellow, section.programs .home-program-dark-blue, section.programs .home-program-light-blue {
-    min-height: 70vh; } }
 
 @media (max-width: 1174px) {
   section#testimonials div.home-testimonial-call-box {
@@ -1295,7 +1652,7 @@ section.find {
     margin-top: -100px; }
     section#testimonials .carousel-control.left img, section#testimonials .carousel-control.right img {
       width: 130px;
-      margin: 0; }
+      margin: 0 18px; }
   section#testimonials .carousel-control.left {
     margin-left: 17%; }
   section#testimonials .carousel-control.right {
@@ -1316,7 +1673,7 @@ section.find {
   section#testimonials .carousel-control.left {
     margin-left: 12%; }
   section#testimonials .carousel-control.right {
-    margin-right: 27%; } }
+    margin-right: 33%; } }
 
 @media (max-width: 570px) {
   section#testimonials div.testimonial-form .modal-content {
@@ -1354,7 +1711,7 @@ section.find {
     width: 95%;
     margin: 0 auto; }
   section#testimonials .carousel-control.right {
-    margin-right: 30%; } }
+    margin-right: 38%; } }
 
 @media (max-width: 375px) {
   section#testimonials div.home-testimonial-call-box h1.number {
@@ -1362,11 +1719,13 @@ section.find {
   section#testimonials div.home-testimonial-call-box h4.call, section#testimonials div.home-testimonial-call-box p, section#testimonials div.home-testimonial-call-box p.or {
     font-size: 14px; }
   section#testimonials div.carousel-inner div.item p.testimonial-text {
+    margin-bottom: 20px; }
+  section#testimonials div.carousel-inner div.item p.caption {
     margin-bottom: 80px; }
   section#testimonials div.testimonial-form .modal-content input, section#testimonials div.testimonial-form .modal-content select {
     font-size: 12px; }
   section#testimonials .carousel-control.left {
-    margin-left: 30px; }
+    margin-left: 15px; }
   section#testimonials .carousel-control.right {
     margin-right: 35%; } }
 
@@ -1374,42 +1733,242 @@ section.find {
   section#testimonials div.carousel-inner {
     width: 90%;
     margin: 0 auto; }
-    section#testimonials div.carousel-inner div.item p.testimonial-text {
+    section#testimonials div.carousel-inner div.item p.testimonial-text, section#testimonials div.carousel-inner div.item p.caption {
       font-size: 16px; }
   section#testimonials div.testimonial-form .modal-content img.testimonial-form-close-button {
     top: -28%;
-    right: 6%; } }
+    right: 6%; }
+  section#testimonials .carousel-control.left {
+    margin-left: 5px; }
+  section#testimonials .carousel-control.right {
+    margin-right: 41%; } }
 
-@media (max-width: 1253px) {
-  div.footer-nav nav.col-md-4.nav-one, div.footer-nav nav.col-md-4.nav-two, div.footer-nav nav.col-md-4.nav-three {
-    padding-left: 30px; } }
+@media (max-width: 2000px) and (min-width: 1735px) {
+  section.programs .home-program-light-blue button {
+    margin-bottom: 36px;
+    margin-top: 40px; } }
 
-@media (max-width: 992px) {
-  div.footer-nav {
-    padding-top: 30px;
-    padding-bottom: 10px; }
-    div.footer-nav nav {
-      text-align: center; }
-      div.footer-nav nav ul {
-        margin-bottom: 0; }
-        div.footer-nav nav ul li, div.footer-nav nav ul li a {
-          padding: 5px 0; }
-    div.footer-nav nav.col-md-4.nav-one, div.footer-nav nav.col-md-4.nav-two, div.footer-nav nav.col-md-4.nav-three {
-      padding-left: 0; }
-  footer div.logo img {
-    padding-bottom: 10px;
-    display: block;
-    margin: 0 auto; }
-  footer div.logo p.copyright {
+@media (max-width: 1735px) {
+  section.programs .home-program-dark-blue button, section.programs .home-program-orange button {
+    margin-bottom: 55px; }
+  section.programs .home-program-yellow button, section.programs .home-program-light-blue button {
+    margin-top: 22px;
+    margin-bottom: 53px; } }
+
+@media (max-width: 1606px) {
+  section.programs .home-program-yellow button {
+    margin-top: 22px; } }
+
+@media (max-width: 1605px) {
+  section.programs .home-program-yellow button {
+    margin-top: 0; } }
+
+@media (max-width: 1600px) {
+  section.programs .home-program-orange button, section.programs .home-program-dark-blue button {
+    margin-bottom: 59px; }
+  section.programs .home-program-light-blue button {
+    margin-bottom: 57px; }
+  section.programs .home-program-yellow button {
+    margin-top: 0;
+    margin-bottom: 57px; } }
+
+@media (max-width: 1593px) {
+  section.programs .home-program-dark-blue button {
+    margin-bottom: 57px;
+    margin-top: 0; } }
+
+@media (max-width: 1590px) {
+  section.programs .home-program-orange button {
+    margin-top: 0;
+    margin-bottom: 57px; } }
+
+@media (max-width: 1467px) {
+  section.programs .home-program-orange button, section.programs .home-program-yellow button, section.programs .home-program-dark-blue button {
+    margin-bottom: 63px;
+    margin-top: 16px; } }
+
+@media (max-width: 1338px) {
+  section.programs .home-program-orange button {
+    margin-top: 22px;
+    margin-bottom: 57px; } }
+
+@media (max-width: 1336px) {
+  section.programs .home-program-orange button {
+    margin-top: 0; } }
+
+@media (max-width: 1303px) {
+  section.programs .home-program-dark-blue button {
+    margin-top: 16px; } }
+
+@media (max-width: 1300px) {
+  section.programs .home-program-dark-blue button {
+    margin-top: 0;
+    margin-bottom: 57px; } }
+
+@media (max-width: 1295px) {
+  section.programs .home-program-yellow button {
+    margin-top: 22px;
+    margin-bottom: 57px; } }
+
+@media (max-width: 1294px) {
+  section.programs .home-program-yellow button {
+    margin-top: 0; } }
+
+@media (max-width: 1230px) {
+  section.programs .home-program-light-blue button {
+    margin-top: 22px; } }
+
+@media (max-width: 1226px) {
+  section.programs .home-program-light-blue button {
+    margin-top: 0; } }
+
+@media (max-width: 1172px) {
+  section.programs .home-program-dark-blue button {
+    margin-top: 0; } }
+
+@media (max-width: 1148px) {
+  section.programs .home-program-orange button, section.programs .home-program-yellow button, section.programs .home-program-light-blue button, section.programs .home-program-dark-blue button {
+    margin-top: 22px; } }
+
+@media (max-width: 1145px) {
+  section.programs .home-program-dark-blue button {
+    margin-top: 0; } }
+
+@media (max-width: 1127px) {
+  section.programs .home-program-orange button {
+    margin-top: 22px; } }
+
+@media (max-width: 1117px) {
+  section.programs .home-program-yellow button {
+    margin-top: 0; } }
+
+@media (max-width: 1113px) {
+  section.programs .home-program-light-blue button {
+    margin-top: 22px; } }
+
+@media (max-width: 1112px) {
+  section.programs .home-program-light-blue button {
+    margin-top: 0; } }
+
+@media (max-width: 1110px) {
+  section.programs .home-program-orange h3, section.programs .home-program-dark-blue h3, section.programs .home-program-dark-blue h3, section.programs .home-program-light-blue h3 {
+    padding-bottom: 27px; } }
+
+@media (max-width: 1109px) {
+  section.programs .home-program-yellow button {
+    margin-top: 22px; }
+  section.programs .home-program-yellow h3 {
+    margin-top: 4px; }
+  section.programs .home-program-orange button {
+    margin-top: 0; } }
+
+@media (max-width: 1108px) {
+  section.programs .home-program-yellow button {
+    margin-top: 22px; }
+  section.programs .home-program-yellow h3 {
+    margin-top: 5px; } }
+
+@media (max-width: 1107px) {
+  section.programs .home-program-yellow h3 {
+    margin-bottom: 19px; } }
+
+@media (max-width: 1106px) {
+  section.programs .home-program-yellow h3 {
+    margin-bottom: 0; }
+  section.programs .home-program-yellow button {
+    margin-top: 0; }
+  section.programs .home-program-yellow p {
+    margin-top: 58px; } }
+
+@media (max-width: 1105px) {
+  section.programs .home-program-yellow p {
+    margin-top: 31px; } }
+
+@media (max-width: 1065px) {
+  section.programs .home-program-light-blue h3 {
+    padding-bottom: 5px; } }
+
+@media (max-width: 1032px) {
+  section.programs .home-program-yellow p {
+    margin-top: 9px; } }
+
+@media (max-width: 1013px) {
+  section.programs .home-program-dark-blue button {
+    margin-top: 22px; }
+  section.programs .home-program-dark-blue h3 {
+    padding-bottom: 5px; } }
+
+@media (max-width: 1012px) {
+  section.programs .home-program-dark-blue button {
+    margin-top: 0; } }
+
+@media (max-width: 1007px) {
+  section.programs .home-program-orange h3 {
+    padding-bottom: 6px; } }
+
+@media (max-width: 991px) {
+  section.programs .home-program-yellow p {
+    margin-top: 39px; }
+  section.programs .home-program-light-blue button {
+    margin-top: 22px; }
+  section.programs .home-program-orange p {
+    margin-top: 37px; } }
+
+@media (max-width: 971px) {
+  section.programs .home-program-orange, section.programs .home-program-yellow, section.programs .home-program-dark-blue, section.programs .home-program-light-blue {
+    min-height: 30vh; } }
+
+@media (max-width: 871px) {
+  section.programs .home-program-orange, section.programs .home-program-yellow, section.programs .home-program-dark-blue, section.programs .home-program-light-blue {
+    min-height: 30vh; }
+  section.programs .home-program-dark-blue p {
+    margin-top: 37px; } }
+
+@media (max-width: 868px) {
+  section.programs .home-program-dark-blue p {
+    margin-top: 42px; }
+  section.programs .home-program-dark-blue button {
+    margin-top: 16px; } }
+
+@media (max-width: 802px) {
+  section.programs .home-program-orange button {
+    margin-top: 22px; } }
+
+@media (max-width: 801px) {
+  section.programs .home-program-orange p {
+    margin-top: 42px; }
+  section.programs .home-program-orange button {
+    margin-top: 17px; } }
+
+@media (max-width: 796px) {
+  section.programs .home-program-dark-blue button {
+    margin-top: 22px; }
+  section.programs .home-program-dark-blue p {
+    margin-bottom: 22px; } }
+
+@media (max-width: 795px) {
+  section.programs .home-program-orange button {
+    margin-top: 0; }
+  section.programs .home-program-orange p {
+    margin-top: 37px; }
+  section.programs .home-program-light-blue button {
+    margin-top: 44px; }
+  section.programs .home-program-dark-blue p {
+    margin-bottom: 44px; } }
+
+@media (max-width: 767px) {
+  section.programs div.programs-text {
+    text-align: center; }
+  section.programs h3 {
     margin: 0 auto;
-    text-align: center; } }
-
-@media (max-width: 480px) {
-  div.footer-nav nav {
-    width: 100%; }
-    div.footer-nav nav li {
-      font-size: 16px;
-      padding: 10px 0; } }
+    padding-left: 0; }
+  section.programs .home-program-orange, section.programs .home-program-yellow, section.programs .home-program-dark-blue, section.programs .home-program-light-blue {
+    min-height: 20vh;
+    padding: 5px; }
+  section.programs button {
+    margin-left: 0; }
+  section.programs .home-program-orange {
+    margin-top: -3px; } }
 
 @media (max-width: 991px) {
   section.letter div.stat-one div.letter-fact-container h5 {
@@ -1651,7 +2210,64 @@ section.find {
 
 @media (max-width: 992px) {
   section.meet-our-tutors div.container {
-    width: 95%; } }
+    width: 95%; }
+  section.meet-our-tutors div.hours, section.meet-our-tutors div.availability {
+    margin: 0 auto;
+    text-align: center; }
+    section.meet-our-tutors div.hours label, section.meet-our-tutors div.availability label {
+      display: inline-block;
+      padding: 0 10px;
+      margin-bottom: 15px; }
+      section.meet-our-tutors div.hours label input, section.meet-our-tutors div.availability label input {
+        margin-right: 2px; }
+    section.meet-our-tutors div.hours button, section.meet-our-tutors div.availability button {
+      display: block;
+      margin: 0 auto;
+      margin-top: 30px;
+      margin-bottom: 40px; } }
+
+@media (max-width: 600px) {
+  section.meet-our-tutors div.tutor div.tutor-info {
+    width: 70%;
+    margin-left: 5%; } }
+
+@media (max-width: 515px) {
+  section.meet-our-tutors div.tutor div.tutor-info {
+    width: 68%;
+    margin-left: 7%; } }
+
+@media (max-width: 480px) {
+  section.meet-our-tutors h1 {
+    font-size: 30px; }
+  section.meet-our-tutors div.tutor div.tutor-image {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 10px; }
+  section.meet-our-tutors div.tutor div.tutor-info {
+    width: 100%;
+    margin: 0 auto; }
+    section.meet-our-tutors div.tutor div.tutor-info h4.name {
+      text-align: center;
+      padding-left: 16%;
+      margin-bottom: 10%; }
+      section.meet-our-tutors div.tutor div.tutor-info h4.name span {
+        position: relative;
+        top: 32px;
+        right: 22%; }
+    section.meet-our-tutors div.tutor div.tutor-info p {
+      width: 99%; } }
+
+@media (max-width: 445px) {
+  section.meet-our-tutors div.tutor div.tutor-info h4.name {
+    padding-left: 21%;
+    margin-bottom: 15%; }
+    section.meet-our-tutors div.tutor div.tutor-info h4.name span {
+      right: 30%; } }
+
+@media (max-width: 320px) {
+  section.meet-our-tutors div.tutor div.tutor-info h4.name span {
+    right: 35%; } }
 
 @media (max-width: 991px) {
   section.one-to-one .one-to-one-div {
@@ -1720,3 +2336,346 @@ section.find {
   section.happy img {
     width: 100%;
     margin-top: 30px; } }
+
+@media (max-width: 992px) {
+  section.math-an-approach .box-one h2, section.math-an-approach .box-two h2, section.math-an-approach .box-three h2 {
+    max-width: 400px;
+    margin: 10px auto; }
+  section.math-an-approach .box-one p, section.math-an-approach .box-two p, section.math-an-approach .box-three p {
+    max-width: 100%;
+    margin-bottom: 60px;
+    text-align: center; }
+  section.math-an-approach h1 {
+    max-width: 100%; }
+  section.find div.find-box {
+    width: calc(33% - 20px); } }
+
+@media (max-width: 735px) {
+  section.find div.find-boxes {
+    max-width: 80%;
+    margin: 0 auto; }
+  section.find div.find-box {
+    width: calc(50% - 20px); } }
+
+@media (max-width: 611px) {
+  section.find div.find-boxes {
+    max-width: calc(100% - 20px);
+    margin: 0 10px; }
+  section.find div.find-box {
+    width: calc(100% - 20px);
+    max-width: 100%; }
+    section.find div.find-box button {
+      width: 150px; } }
+
+@media (max-width: 991px) {
+  section.about-us-hero div.about-us-hero-buttons p.header-link-buttons {
+    width: 20%; } }
+
+@media (max-width: 750px) {
+  section.about-us-hero h1 {
+    margin-left: 0; } }
+
+@media (max-width: 743px) {
+  section.about-us-hero div.about-us-hero-buttons p.header-link-buttons {
+    width: 25%; } }
+
+@media (max-width: 594px) {
+  section.about-us-hero div.about-us-hero-buttons p.header-link-buttons {
+    width: 30%;
+    margin-bottom: 20px; } }
+
+@media (max-width: 495px) {
+  section.about-us-hero div.about-us-hero-buttons p.header-link-buttons {
+    width: 35%; } }
+
+@media (max-width: 424px) {
+  section.about-us-hero div.about-us-hero-buttons p.header-link-buttons {
+    float: none;
+    width: 40%; } }
+
+@media (max-width: 371px) {
+  section.about-us-hero div.about-us-hero-buttons p.header-link-buttons {
+    width: 45%; } }
+
+@media (max-width: 331px) {
+  section.about-us-hero div.about-us-hero-buttons p.header-link-buttons {
+    width: 50%; } }
+
+@media (max-width: 766px) {
+  section.about-us-our-story div.our-story-p1, section.about-us-our-story div.our-story-p2 {
+    padding: 0 20px 20px 20px;
+    width: 100%; }
+  section.about-us-our-story h1 {
+    padding-left: 10px; } }
+
+@media (max-width: 480px) {
+  section.about-us-our-story h1 {
+    font-size: 30px; } }
+
+@media (max-width: 991px) {
+  section.about-us-the-team div.the-team div.team-member div.overlay div.overlayText p.bio {
+    padding-top: 20px;
+    padding-left: 20px;
+    width: 95%;
+    line-height: 1.3;
+    padding-bottom: 5px; }
+  section.about-us-the-team div.the-team div.team-member div.overlay div.overlayText p.learn-more {
+    width: 95%;
+    margin-bottom: 5px;
+    padding-left: 20px; }
+  section.about-us-the-team div.the-team div.team-member div.overlay div.overlayText div.team-member-info2 h4 {
+    margin-top: 10px; } }
+
+@media (max-width: 766px) {
+  section.about-us-the-team div.the-team {
+    width: 95%;
+    margin: 0 auto; }
+    section.about-us-the-team div.the-team div.team-member div.overlay div.overlayText p.bio {
+      line-height: 1.7;
+      width: 90%;
+      padding-left: 30px; }
+    section.about-us-the-team div.the-team div.team-member div.overlay div.overlayText p.learn-more {
+      padding-left: 30px;
+      margin-top: 20px; }
+    section.about-us-the-team div.the-team div.team-member div.overlay div.overlayText div.team-member-info2 {
+      margin-top: 25%; } }
+
+@media (max-width: 715px) {
+  section.about-us-the-team div.the-team div.team-member div.overlay div.overlayText div.team-member-info2 {
+    margin-top: 15%; } }
+
+@media (max-width: 703px) {
+  section.about-us-the-team div.the-team div.team-member div.overlay div.overlayText div.team-member-info2 {
+    margin-top: 10%; } }
+
+@media (max-width: 670px) {
+  section.about-us-the-team div.the-team div.team-member div.overlay div.overlayText div.team-member-info2 {
+    margin-top: 0%; }
+  section.about-us-the-team div.the-team div.team-member div.overlay div.overlayText p.learn-more {
+    margin-bottom: 17px; } }
+
+@media (max-width: 645px) {
+  section.about-us-the-team div.the-team div.team-member div.overlay div.overlayText p.learn-more {
+    margin-bottom: 2px; }
+  section.about-us-the-team div.the-team div.team-member div.overlay div.overlayText p.bio {
+    padding-bottom: 5px; } }
+
+@media (max-width: 638px) {
+  section.about-us-the-team div.the-team div.team-member div.overlay div.overlayText p.bio {
+    width: 95%; }
+  section.about-us-the-team div.the-team div.team-member div.overlay div.overlayText div.team-member-info2 {
+    margin-top: 5%; } }
+
+@media (max-width: 622px) {
+  section.about-us-the-team div.the-team div.team-member div.overlay div.overlayText p.bio {
+    padding-left: 20px; }
+  section.about-us-the-team div.the-team div.team-member div.overlay div.overlayText p.learn-more {
+    padding-left: 20px; } }
+
+@media (max-width: 600px) {
+  section.about-us-the-team div.the-team div.team-member div.overlay div.overlayText p.bio {
+    line-height: 1.5;
+    padding-top: 20px; }
+  section.about-us-the-team div.the-team div.team-member div.overlay div.overlayText p.learn-more {
+    margin-top: 10px; } }
+
+@media (max-width: 583px) {
+  section.about-us-the-team div.the-team div.team-member div.overlay div.overlayText p.bio {
+    line-height: 1.4;
+    padding-top: 15px; } }
+
+@media (max-width: 565px) {
+  section.about-us-the-team div.the-team div.team-member-container {
+    width: 100%;
+    margin: 0 auto; }
+    section.about-us-the-team div.the-team div.team-member-container div.team-member div.overlay div.overlayText {
+      padding-top: 40px;
+      width: 100%;
+      margin: 0 auto; }
+      section.about-us-the-team div.the-team div.team-member-container div.team-member div.overlay div.overlayText p.bio {
+        line-height: 2.5;
+        padding-left: 40px;
+        width: 90%; }
+      section.about-us-the-team div.the-team div.team-member-container div.team-member div.overlay div.overlayText p.learn-more {
+        margin-top: 20px;
+        margin-bottom: 160px;
+        padding-left: 40px; }
+      section.about-us-the-team div.the-team div.team-member-container div.team-member div.overlay div.overlayText div.team-member-info2 {
+        padding-top: 20px; } }
+
+@media (max-width: 535px) {
+  section.about-us-the-team div.the-team div.team-member-container div.team-member div.overlay div.overlayText p.learn-more {
+    margin-bottom: 120px; } }
+
+@media (max-width: 490px) {
+  section.about-us-the-team div.the-team div.team-member-container div.team-member div.overlay div.overlayText p.learn-more {
+    margin-bottom: 80px; } }
+
+@media (max-width: 480px) {
+  section.about-us-the-team h1 {
+    font-size: 30px; } }
+
+@media (max-width: 446px) {
+  section.about-us-the-team div.the-team div.team-member-container div.team-member div.overlay div.overlayText p.learn-more {
+    margin-bottom: 40px; } }
+
+@media (max-width: 434px) {
+  section.about-us-the-team div.the-team div.team-member-container div.team-member div.overlay div.overlayText p.learn-more {
+    margin-bottom: 20px; }
+  section.about-us-the-team div.the-team div.team-member-container div.team-member div.overlay div.overlayText p.bio {
+    width: 95%; } }
+
+@media (max-width: 420px) {
+  section.about-us-the-team div.the-team div.team-member-container div.team-member div.overlay div.overlayText {
+    padding-top: 20px; }
+    section.about-us-the-team div.the-team div.team-member-container div.team-member div.overlay div.overlayText p.learn-more {
+      margin-bottom: 20px; } }
+
+@media (max-width: 396px) {
+  section.about-us-the-team div.the-team div.team-member-container div.team-member div.overlay div.overlayText p.bio {
+    padding-top: 10px;
+    padding-left: 30px; }
+  section.about-us-the-team div.the-team div.team-member-container div.team-member div.overlay div.overlayText p.learn-more {
+    margin-bottom: 10px;
+    margin-top: 10px;
+    padding-left: 30px; }
+  section.about-us-the-team div.the-team div.team-member-container div.team-member div.overlay div.overlayText div.team-member-info2 {
+    padding-top: 5px; } }
+
+@media (max-width: 355px) {
+  section.about-us-the-team div.the-team div.team-member-container div.team-member div.overlay div.overlayText p.bio {
+    padding-top: 0;
+    width: 97%;
+    padding-left: 15px; }
+  section.about-us-the-team div.the-team div.team-member-container div.team-member div.overlay div.overlayText p.learn-more {
+    margin-bottom: 5px;
+    margin-top: 5px;
+    padding-left: 15px; }
+  section.about-us-the-team div.the-team div.team-member-container div.team-member div.overlay div.overlayText div.team-member-info2 {
+    width: 95%;
+    padding-top: 2px; }
+    section.about-us-the-team div.the-team div.team-member-container div.team-member div.overlay div.overlayText div.team-member-info2 h4 {
+      margin-top: 5px; } }
+
+@media (max-width: 330px) {
+  section.about-us-the-team div.the-team div.team-member-container div.team-member div.overlay div.overlayText p.bio {
+    line-height: 2.3; } }
+
+@media (max-width: 991px) {
+  section.about-us-careers div.posting .panel-default > .panel-heading + .panel-collapse > .panel-body button {
+    margin-left: 40%;
+    margin-top: 3%; } }
+
+@media (max-width: 766px) {
+  section.about-us-careers div.container {
+    width: 90%;
+    margin: 0 auto; } }
+
+@media (max-width: 661px) {
+  section.about-us-careers div.mentor-callout h4, section.about-us-careers div.mentor-callout button {
+    clear: both; }
+  section.about-us-careers div.mentor-callout h4 {
+    width: 100%;
+    padding: 10px 60px;
+    margin-left: 3%; }
+  section.about-us-careers div.mentor-callout button {
+    width: 70%;
+    margin-right: 15%;
+    margin-top: 10px; } }
+
+@media (max-width: 600px) {
+  section.about-us-careers div.posting .panel-default > .panel-heading + .panel-collapse > .panel-body button {
+    margin-left: 0;
+    margin-top: 3%; } }
+
+@media (max-width: 520px) {
+  section.about-us-careers div.mentor-callout h4 {
+    padding: 10px; } }
+
+@media (max-width: 500px) {
+  section.about-us-careers div.mentor-callout h4 {
+    text-align: center; } }
+
+@media (max-width: 480px) {
+  section.about-us-careers h1 {
+    font-size: 30px; }
+  section.about-us-careers h2 {
+    font-size: 24px; } }
+
+@media (max-width: 428px) {
+  section.about-us-careers div.mentor-callout button {
+    width: 85%;
+    margin-right: 8%; }
+  section.about-us-careers div.mentor-callout h4 {
+    width: 100%;
+    margin-left: 0; } }
+
+@media (max-width: 380px) {
+  section.about-us-careers div.mentor-callout h4 {
+    font-size: 20px;
+    padding: 10px 0; }
+  section.about-us-careers div.mentor-callout button {
+    width: 100%;
+    margin-right: 0; } }
+
+@media (max-width: 992px) {
+  section.math-an-approach .box-one h2, section.math-an-approach .box-two h2, section.math-an-approach .box-three h2 {
+    max-width: 400px;
+    margin: 10px auto; }
+  section.math-an-approach .box-one p, section.math-an-approach .box-two p, section.math-an-approach .box-three p {
+    max-width: 100%;
+    margin-bottom: 60px;
+    text-align: center; }
+  section.math-an-approach h1 {
+    max-width: 100%; }
+  section.find div.find-box {
+    width: calc(33% - 20px); } }
+
+@media (max-width: 735px) {
+  section.find div.find-boxes {
+    max-width: 80%;
+    margin: 0 auto; }
+  section.find div.find-box {
+    width: calc(50% - 20px); } }
+
+@media (max-width: 611px) {
+  section.find div.find-boxes {
+    max-width: calc(100% - 20px);
+    margin: 0 10px; }
+  section.find div.find-box {
+    width: calc(100% - 20px);
+    max-width: 100%; }
+    section.find div.find-box button {
+      width: 150px; } }
+
+@media (max-width: 1253px) {
+  div.footer-nav nav.col-md-4.nav-one, div.footer-nav nav.col-md-4.nav-two, div.footer-nav nav.col-md-4.nav-three {
+    padding-left: 30px; } }
+
+@media (max-width: 992px) {
+  div.footer-nav {
+    padding-top: 30px;
+    padding-bottom: 10px; }
+    div.footer-nav nav {
+      text-align: center; }
+      div.footer-nav nav ul {
+        margin-bottom: 0; }
+        div.footer-nav nav ul li, div.footer-nav nav ul li a {
+          padding: 5px 0; }
+    div.footer-nav nav.col-md-4.nav-one, div.footer-nav nav.col-md-4.nav-two, div.footer-nav nav.col-md-4.nav-three {
+      padding-left: 0; }
+  footer div.logo img {
+    padding-bottom: 10px;
+    display: block;
+    margin: 0 auto; }
+  footer div.logo p.copyright {
+    margin: 0 auto;
+    text-align: center; } }
+
+@media (max-width: 480px) {
+  div.footer-nav nav {
+    width: 100%;
+    padding-left: 0; }
+    div.footer-nav nav li {
+      font-size: 16px;
+      padding: 10px 0; } }
